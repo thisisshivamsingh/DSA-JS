@@ -161,19 +161,27 @@
 
 // console.log(dig);
 
+// let n = parseInt(prompt("Enter a Number"));
+
+// let nod = 0;
+// let temp = n;
+// while (temp != 0) {
+//   temp = parseInt(temp / 10);
+//   nod++;
+// }
+
+// let div = Math.pow(10, nod - 1);
+// while (div != 0) {
+//   let q = parseInt(n / div);
+//   console.log(q);
+//   n = n % div;
+//   div = parseInt(div / 10);
+// }
+
 let n = parseInt(prompt("Enter a Number"));
 
-let nod = 0;
-let temp = n;
-while (temp != 0) {
-  temp = parseInt(temp / 10);
-  nod++;
-}
-
-let div = Math.pow(10, nod - 1);
-while (div != 0) {
-  let q = parseInt(n / div);
-  console.log(q);
-  n = n % div;
-  div = parseInt(div / 10);
+while (n > 0) {
+  let dig = n % 10;
+  n = parseInt(n / 10);
+  console.log(dig);
 }
