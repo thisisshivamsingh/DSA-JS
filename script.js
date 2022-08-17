@@ -178,10 +178,115 @@
 //   div = parseInt(div / 10);
 // }
 
-let n = parseInt(prompt("Enter a Number"));
+// let n = parseInt(prompt("Enter a Number"));
 
-while (n > 0) {
-  let dig = n % 10;
-  n = parseInt(n / 10);
-  console.log(dig);
-}
+// while (n > 0) {
+//   let dig = n % 10;
+//   n = parseInt(n / 10);
+//   console.log(dig);
+// }
+
+// let n = parseInt(prompt("Enter a Number"));
+
+// let inv = 0;
+// let op = 1;
+// while (n != 0) {
+//   let od = n % 10;
+//   let id = op;
+//   let ip = od;
+
+//   // make change to inv using ip and id
+//   inv = inv + id * Math.pow(10, ip - 1);
+
+//   n = parseInt(n / 10);
+//   op++;
+// }
+// console.log(inv);
+
+// let n = parseInt(prompt("Enter a Number"));
+
+// let k = parseInt(prompt("Enter a Rotation Number"));
+
+// let temp = n;
+// let nod = 0;
+// while (temp > 0) {
+//   temp = parseInt(temp / 10);
+//   nod++;
+// }
+
+// k = k % nod;
+// if (k < 0) {
+//   k = k + nod;
+// }
+
+// let div = 1;
+// let mult = 1;
+
+// for (let i = 1; i <= nod; i++) {
+//   if (i <= k) {
+//     div = div * 10;
+//   } else {
+//     mult = mult * 10;
+//   }
+// }
+// let q = parseInt(n / div);
+// let r = n % div;
+// let rot = r * mult + q;
+// console.log(rot);
+
+// let n1 = parseInt(prompt("Write First Number."));
+// let n2 = parseInt(prompt("Write Second Number"));
+
+// let on1 = n1;
+// let on2 = n2;
+
+// while (n1 % n2 != 0) {
+//   let rem = n1 % n2;
+//   n1 = n2;
+//   n2 = rem;
+// }
+// let gcd = n2;
+// let lcm = parseInt((on1 * on2) / gcd);
+
+// console.log(gcd);
+// console.log(lcm);
+
+// let n = parseInt(prompt("Write a Number"));
+
+// for (let div = 2; div * div <= n; div++) {
+//   while (n % div == 0) {
+//     n = parseInt(n / div);
+//     console.log(div + " ");
+//   }
+// }
+// if (n != 1) {
+//   console.log(n);
+// }
+
+// let a = parseInt(prompt("Write a Number One"));
+// let b = parseInt(prompt("Write a Number Two"));
+// let c = parseInt(prompt("Write a Number Three"));
+
+// let max = a;
+// if (b >= max) {
+//   max = b;
+// }
+// if (c >= max) {
+//   max = c;
+// }
+// if (max === a) {
+//   const flag = b * b + c * c == a * a;
+//   console.log(flag);
+// } else if (max === b) {
+//   const flag = a * a + c * c == b * b;
+//   console.log(flag);
+// } else {
+//   const flag = b * b + a * a == c * c;
+//   console.log(flag);
+// }
+
+let n = parseInt(prompt("Write a Number"));
+
+for (let i = 1; i * i <= n; i++) {
+  console.log(i * i);
+};
