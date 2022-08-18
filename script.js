@@ -285,8 +285,50 @@
 //   console.log(flag);
 // }
 
-let n = parseInt(prompt("Write a Number"));
+// let n = parseInt(prompt("Write a Number"));
 
-for (let i = 1; i * i <= n; i++) {
-  console.log(i * i);
-};
+// for (let i = 1; i * i <= n; i++) {
+//   console.log(i * i);
+// };
+
+// const n = parseInt(prompt("Write a Number"));
+// let star = "";
+// for (let i = 1; i <= n; i++) {
+//   star = "";
+//   for (let j = 1; j <= i; j++) {
+//     star = star + "*";
+//   }
+//   console.log(star);
+// }
+
+// const n = parseInt(prompt("Write a Number"));
+// let star = "";
+// for (let i = n; i >= 1; i--) {
+//   star = "";
+//   for (let j = 1; j <= i; j++) {
+//     star = star + "*";
+//   }
+//   console.log(star);
+// }
+
+const n = parseInt(prompt("Write a Number"));
+let sp = n - 1;
+let st = 1;
+let spc = "";
+let star = "";
+for (let i = 1; i <= n; i++) {
+  spc = "";
+  star = "";
+  // console.log(sp + ", " + st);
+  for (let j = 1; j <= sp; j++) {
+    spc = spc + " ";
+  }
+  star = spc + star;
+  // console.log(spc);
+  for (let j = 1; j <= st; j++) {
+    star = star + "*\t";
+  }
+  console.log(star);
+  sp--;
+  st++;
+}
