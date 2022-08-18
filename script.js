@@ -311,24 +311,44 @@
 //   console.log(star);
 // }
 
+// const n = parseInt(prompt("Write a Number"));
+// let sp = n - 1;
+// let st = 1;
+// let spc = "";
+// let star = "";
+// for (let i = 1; i <= n; i++) {
+//   spc = "";
+//   star = "";
+//   // console.log(sp + ", " + st);
+//   for (let j = 1; j <= sp; j++) {
+//     spc = spc + " ";
+//   }
+//   star = spc + star;
+//   // console.log(spc);
+//   for (let j = 1; j <= st; j++) {
+//     star = star + "*\t";
+//   }
+//   console.log(star);
+//   sp--;
+//   st++;
+// }
+
 const n = parseInt(prompt("Write a Number"));
-let sp = n - 1;
-let st = 1;
+let sp = 0;
+let st = n;
 let spc = "";
 let star = "";
+
 for (let i = 1; i <= n; i++) {
   spc = "";
   star = "";
-  // console.log(sp + ", " + st);
   for (let j = 1; j <= sp; j++) {
     spc = spc + " ";
   }
-  star = spc + star;
-  // console.log(spc);
   for (let j = 1; j <= st; j++) {
     star = star + "*\t";
   }
-  console.log(star);
-  sp--;
-  st++;
+  console.log(spc + star);
+  sp++;
+  st--;
 }
