@@ -311,6 +311,7 @@
 //   console.log(star);
 // }
 
+// Unsolved //
 // const n = parseInt(prompt("Write a Number"));
 // let sp = n - 1;
 // let st = 1;
@@ -333,22 +334,79 @@
 //   st++;
 // }
 
+// Unsolved //
+// const n = parseInt(prompt("Write a Number"));
+// let sp = 0;
+// let st = n;
+// let spc = "";
+// let star = "";
+
+// for (let i = 1; i <= n; i++) {
+//   spc = "";
+//   star = "";
+//   for (let j = 1; j <= sp; j++) {
+//     spc = spc + " ";
+//   }
+//   for (let j = 1; j <= st; j++) {
+//     star = star + "*\t";
+//   }
+//   console.log(spc + star);
+//   sp++;
+//   st--;
+// }
+
+// const n = parseInt(prompt("Write a Number"));
+// let sp = parseInt(n / 2);
+// let st = 1;
+// let spc = "";
+// let star = "";
+
+// for (let i = 1; i <= n; i++) {
+//   spc = "";
+//   star = "";
+//   // console.log(sp + ", " + st);
+//   for (let j = 1; j <= sp; j++) {
+//     spc = spc + " ";
+//   }
+//   for (let j = 1; j <= st; j++) {
+//     star = star + "*";
+//   }
+//   console.log(spc + star);
+//   if (i <= parseInt(n / 2)) {
+//     sp--;
+//     st += 2;
+//   } else {
+//     sp++;
+//     st -= 2;
+//   }
+// }
+
 const n = parseInt(prompt("Write a Number"));
-let sp = 0;
-let st = n;
+let st = parseInt(n / 2) + 1;
+let sp = 1;
 let spc = "";
-let star = "";
+let starA = "";
+let starB = "";
 
 for (let i = 1; i <= n; i++) {
   spc = "";
-  star = "";
+  starA = "";
+  starB = "";
+  for (let j = 1; j <= st; j++) {
+    starA = starA + "*";
+  }
   for (let j = 1; j <= sp; j++) {
     spc = spc + " ";
   }
   for (let j = 1; j <= st; j++) {
-    star = star + "*\t";
+    starB = starB + "*";
   }
-  console.log(spc + star);
-  sp++;
-  st--;
+  console.log(starA + spc + starB);
+  if (i <= parseInt(n / 2)) {
+    st--;
+    sp += 2;
+  } else {
+    st++;
+    sp -= 2;
+  }
 }
