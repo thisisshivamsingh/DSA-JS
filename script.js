@@ -413,17 +413,32 @@
 
 ///// BASIC PATTERN /////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let star = "";
+// while (i <= n) {
+//   let j = 1;
+//   star = "";
+//   while (j <= n) {
+//     star = star + "*";
+//     j++;
+//   }
+//   console.log(star);
+//   i++;
+// }
+
 const n = parseInt(prompt("Write a Number"));
 
 let i = 1;
-let star = "";
+let num = "";
 while (i <= n) {
   let j = 1;
-  star = "";
+  num = "";
   while (j <= n) {
-    star = star + "*";
+    num = num + i;
     j++;
   }
-  console.log(star);
+  console.log(num);
   i++;
 }
