@@ -478,3 +478,20 @@
 //   console.log(num);
 //   i++;
 // }
+
+///// PATTERN 5 /////
+
+const n = parseInt(prompt("Write a Number"));
+
+let i = 1;
+let container = "";
+while (i <= n) {
+  container = "";
+  let j = 1;
+  while (j <= i) {
+    container = container + j;
+    j++;
+  }
+  console.log(container);
+  i++;
+}
