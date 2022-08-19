@@ -443,17 +443,32 @@
 //   i++;
 // }
 
-const n = parseInt(prompt("Write a Number"));
+// const n = parseInt(prompt("Write a Number"));
 
-let i = 1;
-let num = "";
-while (i <= n) {
-  let j = 1;
-  num = "";
-  while (j <= n) {
-    num = num + j;
-    j++;
-  }
-  console.log(num);
-  i++;
-}
+// let i = 1;
+// let num = "";
+// while (i <= n) {
+//   let j = 1;
+//   num = "";
+//   while (j <= n) {
+//     num = num + j;
+//     j++;
+//   }
+//   console.log(num);
+//   i++;
+// }
+
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let num = "";
+// while (i <= n) {
+//   let j = 1;
+//   num = "";
+//   while (j <= n) {
+//     num = num + (n - j + 1);
+//     j++;
+//   }
+//   console.log(num);
+//   i++;
+// }
