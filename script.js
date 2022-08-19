@@ -381,32 +381,49 @@
 //   }
 // }
 
-const n = parseInt(prompt("Write a Number"));
-let st = parseInt(n / 2) + 1;
-let sp = 1;
-let spc = "";
-let starA = "";
-let starB = "";
+// const n = parseInt(prompt("Write a Number"));
+// let st = parseInt(n / 2) + 1;
+// let sp = 1;
+// let spc = "";
+// let starA = "";
+// let starB = "";
 
-for (let i = 1; i <= n; i++) {
-  spc = "";
-  starA = "";
-  starB = "";
-  for (let j = 1; j <= st; j++) {
-    starA = starA + "*";
+// for (let i = 1; i <= n; i++) {
+//   spc = "";
+//   starA = "";
+//   starB = "";
+//   for (let j = 1; j <= st; j++) {
+//     starA = starA + "*";
+//   }
+//   for (let j = 1; j <= sp; j++) {
+//     spc = spc + " ";
+//   }
+//   for (let j = 1; j <= st; j++) {
+//     starB = starB + "*";
+//   }
+//   console.log(starA + spc + starB);
+//   if (i <= parseInt(n / 2)) {
+//     st--;
+//     sp += 2;
+//   } else {
+//     st++;
+//     sp -= 2;
+//   }
+// }
+
+///// BASIC PATTERN /////
+
+const n = parseInt(prompt("Write a Number"));
+
+let i = 1;
+let star = "";
+while (i <= n) {
+  let j = 1;
+  star = "";
+  while (j <= n) {
+    star = star + "*";
+    j++;
   }
-  for (let j = 1; j <= sp; j++) {
-    spc = spc + " ";
-  }
-  for (let j = 1; j <= st; j++) {
-    starB = starB + "*";
-  }
-  console.log(starA + spc + starB);
-  if (i <= parseInt(n / 2)) {
-    st--;
-    sp += 2;
-  } else {
-    st++;
-    sp -= 2;
-  }
+  console.log(star);
+  i++;
 }
