@@ -498,14 +498,33 @@
 
 ///// PATTERN 6 /////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let container = "";
+// while (i <= n) {
+//   container = "";
+//   let j = 1;
+//   let startingNumber = i;
+//   while (j <= i) {
+//     container = container + startingNumber;
+//     startingNumber++;
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+///// PATTERN 7 /////
+
 const n = parseInt(prompt("Write a Number"));
 
 let i = 1;
 let container = "";
+let startingNumber = 1;
 while (i <= n) {
   container = "";
   let j = 1;
-  let startingNumber = i;
   while (j <= i) {
     container = container + startingNumber;
     startingNumber++;
