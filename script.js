@@ -428,6 +428,8 @@
 //   i++;
 // }
 
+///// PATTERN 2 /////
+
 // const n = parseInt(prompt("Write a Number"));
 
 // let i = 1;
@@ -443,6 +445,8 @@
 //   i++;
 // }
 
+///// PATTERN 3 /////
+
 // const n = parseInt(prompt("Write a Number"));
 
 // let i = 1;
@@ -457,6 +461,8 @@
 //   console.log(num);
 //   i++;
 // }
+
+///// PATTERN 4 /////
 
 // const n = parseInt(prompt("Write a Number"));
 
