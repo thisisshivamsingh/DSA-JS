@@ -428,6 +428,21 @@
 //   i++;
 // }
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let num = "";
+// while (i <= n) {
+//   let j = 1;
+//   num = "";
+//   while (j <= n) {
+//     num = num + i;
+//     j++;
+//   }
+//   console.log(num);
+//   i++;
+// }
+
 const n = parseInt(prompt("Write a Number"));
 
 let i = 1;
@@ -436,7 +451,7 @@ while (i <= n) {
   let j = 1;
   num = "";
   while (j <= n) {
-    num = num + i;
+    num = num + j;
     j++;
   }
   console.log(num);
