@@ -723,3 +723,39 @@
 //   i++;
 //   dn--;
 // }
+
+//////////////////////
+///// PATTERN 17 /////
+//////////////////////
+
+const n = parseInt(prompt("Write a Number"));
+
+let i = 1;
+let container = "";
+
+while (i <= n) {
+  container = "";
+  let spaces = 1;
+  while (spaces <= n - i) {
+    container = container + " ";
+    spaces++;
+  }
+  let j = 1;
+  let p = 1;
+  while (j <= i) {
+    container = container + p;
+    p++;
+    j++;
+  }
+
+  p = i - 1;
+  j = 1;
+
+  while (j <= i - 1) {
+    container = container + p;
+    p--;
+    j++;
+  }
+  console.log(container);
+  i++;
+}
