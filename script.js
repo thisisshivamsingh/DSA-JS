@@ -688,17 +688,38 @@
 ///// PATTERN 15 /////
 //////////////////////
 
-const n = parseInt(prompt("Write a Number"));
+// const n = parseInt(prompt("Write a Number"));
 
-let i = 1;
-let container = "";
-while (i <= n) {
-  let j = 1;
-  container = "";
-  while (j <= n - i + 1) {
-    container = container + "*";
-    j++;
-  }
-  console.log(container);
-  i++;
-}
+// let i = 1;
+// let container = "";
+// while (i <= n) {
+//   let j = 1;
+//   container = "";
+//   while (j <= n - i + 1) {
+//     container = container + "*";
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+//////////////////////
+///// PATTERN 16 /////
+//////////////////////
+
+// const n = parseInt(prompt("Write a Number"));
+
+// let dn = n;
+// let i = 1;
+// let container = "";
+// while (i <= n) {
+//   let j = 1;
+//   container = "";
+//   while (j <= n - i + 1) {
+//     container = container + dn;
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+//   dn--;
+// }
