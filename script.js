@@ -517,19 +517,39 @@
 
 ///// PATTERN 7 /////
 
-const n = parseInt(prompt("Write a Number"));
+// const n = parseInt(prompt("Write a Number"));
 
-let i = 1;
-let container = "";
-let startingNumber = 1;
-while (i <= n) {
-  container = "";
-  let j = 1;
-  while (j <= i) {
-    container = container + startingNumber;
-    startingNumber++;
-    j++;
-  }
-  console.log(container);
-  i++;
-}
+// let i = 1;
+// let container = "";
+// let startingNumber = 1;
+// while (i <= n) {
+//   container = "";
+//   let j = 1;
+//   while (j <= i) {
+//     container = container + startingNumber;
+//     startingNumber++;
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+///// PATTERN 8 /////
+
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let container = "";
+// while (i <= n) {
+//   let j = 1;
+//   container = "";
+//   while (j <= n) {
+//     const a = "A";
+//     container = container + String.fromCharCode(a.codePointAt(0) + j - 1);
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+
