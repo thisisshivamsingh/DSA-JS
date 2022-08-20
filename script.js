@@ -764,10 +764,40 @@
 ///// PATTERN 18 /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let k = 0;
+// let container = "";
+// while (i <= n) {
+//   container = "";
+//   let spaces = 1;
+//   while (spaces <= n - i) {
+//     container = container + " ";
+//     spaces++;
+//   }
+//   let j = 1;
+//   while (j <= i + k) {
+//     container = container + "*";
+//     j++;
+//   }
+//   k++;
+//   //   j = 1;
+//   //   while (j <= i - 1) {
+//   //     container = container + "*";
+//   //     j++;
+//   //   }
+//   console.log(container);
+//   i++;
+// }
+
+//////////////////////
+///// PATTERN 19 /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
 
 let i = 1;
-let k = 0;
 let container = "";
 while (i <= n) {
   container = "";
@@ -777,16 +807,19 @@ while (i <= n) {
     spaces++;
   }
   let j = 1;
-  while (j <= i + k) {
-    container = container + "*";
+  let p = i;
+  while (j <= i) {
+    container = container + p;
+    p++;
     j++;
   }
-  k++;
-  //   j = 1;
-  //   while (j <= i - 1) {
-  //     container = container + "*";
-  //     j++;
-  //   }
+  let k = i - 1;
+  j = 1;
+  while (j <= i - 1) {
+    container = container + (k + i - 1);
+    k--;
+    j++;
+  }
   console.log(container);
   i++;
 }
