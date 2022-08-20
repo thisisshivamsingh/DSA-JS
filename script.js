@@ -613,3 +613,24 @@
 //   console.log(container);
 //   i++;
 // }
+
+///// PATTERN 12 /////
+
+const n = parseInt(prompt("Write a Number"));
+
+let i = 1;
+let container = "";
+
+while (i <= n) {
+  let j = 1;
+  container = "";
+  const a = "A";
+  let startingChar = String.fromCharCode(a.codePointAt(0) + n - i);
+  while (j <= i) {
+    container = container + startingChar;
+    startingChar = String.fromCharCode(startingChar.codePointAt(0) + 1);
+    j++;
+  }
+  console.log(container);
+  i++;
+}
