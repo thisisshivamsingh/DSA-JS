@@ -951,27 +951,53 @@
 ///// PATTERN 23 /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let container = "";
+// let i = 1;
+// let sum = 0;
+
+// while (i <= n) {
+//   container = "";
+//   container = container + 1;
+//   let j = 2;
+//   while (j <= i) {
+//     container = container + "+";
+//     container = container + j;
+//     j++;
+//   }
+//   j = 1;
+//   while (j <= i) {
+//     sum = sum + j;
+//     j++;
+//   }
+//   console.log(container + "=" + sum);
+//   sum = 0;
+//   i++;
+// }
+
+//////////////////////
+///// PATTERN 24 /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
 
 let container = "";
 let i = 1;
-let sum = 0;
+let max = n * 2 - 1;
 
 while (i <= n) {
   container = "";
-  container = container + 1;
-  let j = 2;
-  while (j <= i) {
-    container = container + "+";
-    container = container + j;
+  let j = 1;
+  let sum = 2 * i - 1;
+  while (j <= n) {
+    container = container + sum;
+    sum += 2;
+    if (sum > max) {
+      sum = 1;
+    }
     j++;
   }
-  j = 1;
-  while (j <= i) {
-    sum = sum + j;
-    j++;
-  }
-  console.log(container + "=" + sum);
-  sum = 0;
+  console.log(container);
   i++;
 }
