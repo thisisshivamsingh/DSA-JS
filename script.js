@@ -795,31 +795,75 @@
 ///// PATTERN 19 /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let container = "";
+// while (i <= n) {
+//   container = "";
+//   let spaces = 1;
+//   while (spaces <= n - i) {
+//     container = container + " ";
+//     spaces++;
+//   }
+//   let j = 1;
+//   let p = i;
+//   while (j <= i) {
+//     container = container + p;
+//     p++;
+//     j++;
+//   }
+//   let k = i - 1;
+//   j = 1;
+//   while (j <= i - 1) {
+//     container = container + (k + i - 1);
+//     k--;
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+//////////////////////
+///// PATTERN 20 /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
 
 let i = 1;
+let n1 = parseInt((n + 1) / 2);
+let n2 = n - n1;
 let container = "";
-while (i <= n) {
+
+while (i <= n1) {
   container = "";
-  let spaces = 1;
-  while (spaces <= n - i) {
-    container = container + " ";
-    spaces++;
-  }
   let j = 1;
-  let p = i;
-  while (j <= i) {
-    container = container + p;
-    p++;
+  while (j <= n1 - i) {
+    container = container + " ";
     j++;
   }
-  let k = i - 1;
   j = 1;
-  while (j <= i - 1) {
-    container = container + (k + i - 1);
-    k--;
+  while (j <= 2 * i - 1) {
+    container = container + "*";
     j++;
   }
   console.log(container);
   i++;
+}
+
+i = n2;
+while (i >= 1) {
+  container = "";
+  let j = 1;
+  while (j <= n2 - i + 1) {
+    container = container + " ";
+    j++;
+  }
+  j = 1;
+  while (j <= 2 * i - 1) {
+    container = container + "*";
+    j++;
+  }
+  console.log(container);
+  i--;
 }
