@@ -872,51 +872,77 @@
 ///// PATTERN 21 /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// console.log("*");
+// let i = 1;
+// let container = "";
+// while (i <= n) {
+//   container = "";
+//   let j = 1;
+//   while (j <= 1) {
+//     container = container + "*";
+//     j++;
+//   }
+//   j = 1;
+//   while (j <= i) {
+//     container = container + j;
+//     j++;
+//   }
+//   j = 1;
+//   while (j < i) {
+//     container = container + (i - j);
+//     j++;
+//   }
+//   console.log(container + "*");
+//   i++;
+// }
+// i = n;
+// while (i > 1) {
+//   container = "";
+//   let j = 1;
+//   while (j <= 1) {
+//     container = container + "*";
+//     j++;
+//   }
+//   j = 1;
+//   while (j < i) {
+//     container = container + j;
+//     j++;
+//   }
+//   j = 1;
+//   while (j < i - 1) {
+//     container = container + (i - j - 1);
+//     j++;
+//   }
+//   console.log(container + "*");
+
+//   i--;
+// }
+// console.log("*");
+
+//////////////////////
+///// PATTERN 22 /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
 
-console.log("*");
-let i = 1;
 let container = "";
+let i = 1;
 while (i <= n) {
   container = "";
+
+  let spaces = "";
+  while (spaces <= i - 1) {
+    container = container + " ";
+    spaces++;
+  }
+
   let j = 1;
-  while (j <= 1) {
+  while (j <= n) {
     container = container + "*";
     j++;
   }
-  j = 1;
-  while (j <= i) {
-    container = container + j;
-    j++;
-  }
-  j = 1;
-  while (j < i) {
-    container = container + (i - j);
-    j++;
-  }
-  console.log(container + "*");
+  console.log(container);
   i++;
 }
-i = n;
-while (i > 1) {
-  container = "";
-  let j = 1;
-  while (j <= 1) {
-    container = container + "*";
-    j++;
-  }
-  j = 1;
-  while (j < i) {
-    container = container + j;
-    j++;
-  }
-  j = 1;
-  while (j < i - 1) {
-    container = container + (i - j - 1);
-    j++;
-  }
-  console.log(container + "*");
-
-  i--;
-}
-console.log("*");
