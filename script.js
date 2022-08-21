@@ -828,42 +828,95 @@
 ///// PATTERN 20 /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let i = 1;
+// let n1 = parseInt((n + 1) / 2);
+// let n2 = n - n1;
+// let container = "";
+
+// while (i <= n1) {
+//   container = "";
+//   let j = 1;
+//   while (j <= n1 - i) {
+//     container = container + " ";
+//     j++;
+//   }
+//   j = 1;
+//   while (j <= 2 * i - 1) {
+//     container = container + "*";
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+// i = n2;
+// while (i >= 1) {
+//   container = "";
+//   let j = 1;
+//   while (j <= n2 - i + 1) {
+//     container = container + " ";
+//     j++;
+//   }
+//   j = 1;
+//   while (j <= 2 * i - 1) {
+//     container = container + "*";
+//     j++;
+//   }
+//   console.log(container);
+//   i--;
+// }
+
+//////////////////////
+///// PATTERN 21 /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
 
+console.log("*");
 let i = 1;
-let n1 = parseInt((n + 1) / 2);
-let n2 = n - n1;
 let container = "";
-
-while (i <= n1) {
+while (i <= n) {
   container = "";
   let j = 1;
-  while (j <= n1 - i) {
-    container = container + " ";
-    j++;
-  }
-  j = 1;
-  while (j <= 2 * i - 1) {
+  while (j <= 1) {
     container = container + "*";
     j++;
   }
-  console.log(container);
+  j = 1;
+  while (j <= i) {
+    container = container + j;
+    j++;
+  }
+  j = 1;
+  while (j < i) {
+    container = container + (i - j);
+    j++;
+  }
+  console.log(container + "*");
   i++;
 }
-
-i = n2;
-while (i >= 1) {
+i = n;
+while (i > 1) {
   container = "";
   let j = 1;
-  while (j <= n2 - i + 1) {
-    container = container + " ";
-    j++;
-  }
-  j = 1;
-  while (j <= 2 * i - 1) {
+  while (j <= 1) {
     container = container + "*";
     j++;
   }
-  console.log(container);
+  j = 1;
+  while (j < i) {
+    container = container + j;
+    j++;
+  }
+  j = 1;
+  while (j < i - 1) {
+    container = container + (i - j - 1);
+    j++;
+  }
+  console.log(container + "*");
+
   i--;
 }
+console.log("*");
