@@ -980,24 +980,49 @@
 ///// PATTERN 24 /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+
+// let container = "";
+// let i = 1;
+// let max = n * 2 - 1;
+
+// while (i <= n) {
+//   container = "";
+//   let j = 1;
+//   let sum = 2 * i - 1;
+//   while (j <= n) {
+//     container = container + sum;
+//     sum += 2;
+//     if (sum > max) {
+//       sum = 1;
+//     }
+//     j++;
+//   }
+//   console.log(container);
+//   i++;
+// }
+
+//////////////////////
+///// Sum and Product /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
+const c = parseInt(prompt("Write Your Choice Number"));
+let sum = 0;
+let product = 1;
 
-let container = "";
-let i = 1;
-let max = n * 2 - 1;
-
-while (i <= n) {
-  container = "";
-  let j = 1;
-  let sum = 2 * i - 1;
-  while (j <= n) {
-    container = container + sum;
-    sum += 2;
-    if (sum > max) {
-      sum = 1;
-    }
-    j++;
+for (let i = 1; i <= n; i++) {
+  if (c == 1) {
+    sum = sum + i;
+  } else if (c == 2) {
+    product = product * i;
   }
-  console.log(container);
-  i++;
+}
+
+if (c == 1) {
+  console.log(sum);
+} else if (c == 2) {
+  console.log(product);
+} else {
+  console.log("-1");
 }
