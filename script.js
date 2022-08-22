@@ -1051,25 +1051,48 @@
 ///// Introduction to Function /////
 //////////////////////
 
-function display(n, r, npr) {
-  console.log(n + "p" + r + "=" + npr);
-}
+// function display(n, r, npr) {
+//   console.log(n + "p" + r + "=" + npr);
+// }
 
-function fact(x) {
-  let rv = 1;
+// function fact(x) {
+//   let rv = 1;
 
-  for (let i = 1; i <= x; i++) {
-    rv = rv * i;
+//   for (let i = 1; i <= x; i++) {
+//     rv = rv * i;
+//   }
+//   return rv;
+// }
+
+// const n = parseInt(prompt("Write a Number for p"));
+// const r = parseInt(prompt("Write a Number for r"));
+
+// const nFact = fact(n);
+// const nmrFact = fact(n - r);
+
+// const npr = nFact / nmrFact;
+
+// display(n, r, npr);
+
+//////////////////////
+///// Digits Frequency /////
+//////////////////////
+
+let n = parseInt(prompt("Write a Number"));
+const d = parseInt(prompt("Write a Digit"));
+
+function getDigitFrequency(n, d) {
+  let rv = 0;
+  while (n > 0) {
+    let dig = n % 10;
+    n = parseInt(n / 10);
+
+    if (dig == d) {
+      rv++;
+    }
   }
   return rv;
 }
 
-const n = parseInt(prompt("Write a Number for p"));
-const r = parseInt(prompt("Write a Number for r"));
-
-const nFact = fact(n);
-const nmrFact = fact(n - r);
-
-const npr = nFact / nmrFact;
-
-display(n, r, npr);
+const f = getDigitFrequency(n, d);
+console.log(f);
