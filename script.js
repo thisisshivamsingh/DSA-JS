@@ -1006,23 +1006,43 @@
 ///// Sum and Product /////
 //////////////////////
 
+// const n = parseInt(prompt("Write a Number"));
+// const c = parseInt(prompt("Write Your Choice Number"));
+// let sum = 0;
+// let product = 1;
+
+// for (let i = 1; i <= n; i++) {
+//   if (c == 1) {
+//     sum = sum + i;
+//   } else if (c == 2) {
+//     product = product * i;
+//   }
+// }
+
+// if (c == 1) {
+//   console.log(sum);
+// } else if (c == 2) {
+//   console.log(product);
+// } else {
+//   console.log("-1");
+// }
+
+//////////////////////
+///// Terms Of AP /////
+//////////////////////
+
 const n = parseInt(prompt("Write a Number"));
-const c = parseInt(prompt("Write Your Choice Number"));
-let sum = 0;
-let product = 1;
+let j = 1;
+let p = 0;
+let i = 1;
+let container = 0;
 
-for (let i = 1; i <= n; i++) {
-  if (c == 1) {
-    sum = sum + i;
-  } else if (c == 2) {
-    product = product * i;
+while (i <= n) {
+  p = 3 * j + 2;
+  if (p % 4 != 0) {
+    container = container + p + " ";
+    i++;
   }
+  j++;
 }
-
-if (c == 1) {
-  console.log(sum);
-} else if (c == 2) {
-  console.log(product);
-} else {
-  console.log("-1");
-}
+console.log(container);
