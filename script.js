@@ -1031,18 +1031,45 @@
 ///// Terms Of AP /////
 //////////////////////
 
-const n = parseInt(prompt("Write a Number"));
-let j = 1;
-let p = 0;
-let i = 1;
-let container = 0;
+// const n = parseInt(prompt("Write a Number"));
+// let j = 1;
+// let p = 0;
+// let i = 1;
+// let container = 0;
 
-while (i <= n) {
-  p = 3 * j + 2;
-  if (p % 4 != 0) {
-    container = container + p + " ";
-    i++;
-  }
-  j++;
+// while (i <= n) {
+//   p = 3 * j + 2;
+//   if (p % 4 != 0) {
+//     container = container + p + " ";
+//     i++;
+//   }
+//   j++;
+// }
+// console.log(container);
+
+//////////////////////
+///// Introduction to Function /////
+//////////////////////
+
+function display(n, r, npr) {
+  console.log(n + "p" + r + "=" + npr);
 }
-console.log(container);
+
+function fact(x) {
+  let rv = 1;
+
+  for (let i = 1; i <= x; i++) {
+    rv = rv * i;
+  }
+  return rv;
+}
+
+const n = parseInt(prompt("Write a Number for p"));
+const r = parseInt(prompt("Write a Number for r"));
+
+const nFact = fact(n);
+const nmrFact = fact(n - r);
+
+const npr = nFact / nmrFact;
+
+display(n, r, npr);
