@@ -1125,10 +1125,55 @@
 ///// Any base to Decimal /////
 //////////////////////
 
-let n = parseInt(prompt("Write Number"));
-const b = parseInt(prompt("Write base No"));
+// let n = parseInt(prompt("Write Number"));
+// const b = parseInt(prompt("Write base No"));
 
-const getValueIndecimal = (n, b) => {
+// const getValueIndecimal = (n, b) => {
+//   // Write your code here
+//   let rv = 0;
+//   let p = 1;
+//   while (n > 0) {
+//     let dig = n % 10;
+//     n = parseInt(n / 10);
+//     rv += dig * p;
+//     p = p * b;
+//   }
+//   return rv;
+// };
+
+// const d = getValueIndecimal(n, b);
+// console.log(d);
+
+//////////////////////
+///// Any Base to Any Base /////
+//////////////////////
+
+let n = parseInt(prompt("Write Number"));
+const b1 = parseInt(prompt("Write base No 1"));
+const b2 = parseInt(prompt("Write base No 2"));
+
+const getValue = (n, b1, b2) => {
+  // Write your code here
+  const dec = anyBaseToDecimal(n, b1);
+  const dn = decimalToAnyBase(dec, b2);
+  return dn;
+};
+
+const decimalToAnyBase = (n, b) => {
+  // Write code here
+  let rv = 0;
+
+  let p = 1;
+  while (n > 0) {
+    let dig = n % b;
+    n = parseInt(n / b);
+    rv += dig * p;
+    p = p * 10;
+  }
+  return rv;
+};
+
+const anyBaseToDecimal = (n, b) => {
   // Write your code here
   let rv = 0;
   let p = 1;
@@ -1141,5 +1186,5 @@ const getValueIndecimal = (n, b) => {
   return rv;
 };
 
-const d = getValueIndecimal(n, b);
+const d = getValue(n, b1, b2);
 console.log(d);
