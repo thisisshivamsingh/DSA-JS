@@ -1078,21 +1078,45 @@
 ///// Digits Frequency /////
 //////////////////////
 
-let n = parseInt(prompt("Write a Number"));
-const d = parseInt(prompt("Write a Digit"));
+// let n = parseInt(prompt("Write a Number"));
+// const d = parseInt(prompt("Write a Digit"));
 
-function getDigitFrequency(n, d) {
+// function getDigitFrequency(n, d) {
+//   let rv = 0;
+//   while (n > 0) {
+//     let dig = n % 10;
+//     n = parseInt(n / 10);
+
+//     if (dig == d) {
+//       rv++;
+//     }
+//   }
+//   return rv;
+// }
+
+// const f = getDigitFrequency(n, d);
+// console.log(f);
+
+//////////////////////
+///// Decimal to any Base Question /////
+//////////////////////
+
+let n = parseInt(prompt("Write Number"));
+const b = parseInt(prompt("Write base No"));
+
+const getValueInBase = (n, b) => {
+  // Write code here
   let rv = 0;
-  while (n > 0) {
-    let dig = n % 10;
-    n = parseInt(n / 10);
 
-    if (dig == d) {
-      rv++;
-    }
+  let p = 1;
+  while (n > 0) {
+    let dig = n % b;
+    n = parseInt(n / b);
+    rv += dig * p;
+    p = p * 10;
   }
   return rv;
-}
+};
 
-const f = getDigitFrequency(n, d);
-console.log(f);
+const dn = getValueInBase(n, b);
+console.log(dn);
