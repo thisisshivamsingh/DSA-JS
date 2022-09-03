@@ -1148,43 +1148,75 @@
 ///// Any Base to Any Base /////
 //////////////////////
 
-let n = parseInt(prompt("Write Number"));
-const b1 = parseInt(prompt("Write base No 1"));
-const b2 = parseInt(prompt("Write base No 2"));
+// let n = parseInt(prompt("Write Number"));
+// const b1 = parseInt(prompt("Write base No 1"));
+// const b2 = parseInt(prompt("Write base No 2"));
 
-const getValue = (n, b1, b2) => {
+// const getValue = (n, b1, b2) => {
+//   // Write your code here
+//   const dec = anyBaseToDecimal(n, b1);
+//   const dn = decimalToAnyBase(dec, b2);
+//   return dn;
+// };
+
+// const decimalToAnyBase = (n, b) => {
+//   // Write code here
+//   let rv = 0;
+
+//   let p = 1;
+//   while (n > 0) {
+//     let dig = n % b;
+//     n = parseInt(n / b);
+//     rv += dig * p;
+//     p = p * 10;
+//   }
+//   return rv;
+// };
+
+// const anyBaseToDecimal = (n, b) => {
+//   // Write your code here
+//   let rv = 0;
+//   let p = 1;
+//   while (n > 0) {
+//     let dig = n % 10;
+//     n = parseInt(n / 10);
+//     rv += dig * p;
+//     p = p * b;
+//   }
+//   return rv;
+// };
+
+// const d = getValue(n, b1, b2);
+// console.log(d);
+
+//////////////////////
+///// Any Base Addition /////
+//////////////////////
+
+const b = parseInt(prompt("Write Base Number"));
+const n1 = parseInt(prompt("Write First Number"));
+const n2 = parseInt(prompt("Write Second Number"));
+
+const getSum = (b, n1, n2) => {
   // Write your code here
-  const dec = anyBaseToDecimal(n, b1);
-  const dn = decimalToAnyBase(dec, b2);
-  return dn;
-};
-
-const decimalToAnyBase = (n, b) => {
-  // Write code here
   let rv = 0;
 
+  let c = 0;
   let p = 1;
-  while (n > 0) {
-    let dig = n % b;
-    n = parseInt(n / b);
-    rv += dig * p;
+  while (n1 > 0 || n2 > 0 || c > 0) {
+    let d1 = n1 % 10;
+    let d2 = n2 % 10;
+    n1 = parseInt(n1 / 10);
+    n2 = parseInt(n2 / 10);
+
+    let d = d1 + d2 + c;
+    c = parseInt(d / b);
+    d = d % b;
+
+    rv += d * p;
     p = p * 10;
   }
   return rv;
 };
-
-const anyBaseToDecimal = (n, b) => {
-  // Write your code here
-  let rv = 0;
-  let p = 1;
-  while (n > 0) {
-    let dig = n % 10;
-    n = parseInt(n / 10);
-    rv += dig * p;
-    p = p * b;
-  }
-  return rv;
-};
-
-const d = getValue(n, b1, b2);
+const d = getSum(b, n1, n2);
 console.log(d);
