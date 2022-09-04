@@ -1366,7 +1366,7 @@
 // const arr = [];
 
 // for (let i = 0; i < tNum; i++) {
-//   arr[i] = parseFloat(prompt("Write a Number"));
+//   arr[i] = parseInt(prompt("Write a Number"));
 // }
 
 // const max = Math.max(...arr);
@@ -1374,3 +1374,44 @@
 
 // const span = max - min;
 // console.log(span);
+
+//////////////////////
+///// Find Element In An Array /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total Numbers"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number"));
+// }
+
+// const data = parseInt(prompt("Write a Number that you want to Find"));
+
+// let idx = -1;
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] === data) {
+//     idx = i;
+//     break;
+//   }
+// }
+
+// console.log(idx);
+
+/////////////////***************///////////////
+
+const tNum = parseInt(prompt("Write total Numbers"));
+
+const arr = [];
+
+for (let i = 0; i < tNum; i++) {
+  arr[i] = parseInt(prompt("Write a Number"));
+}
+
+const data = parseInt(prompt("Write a Number that you want to Find"));
+
+console.log(arr.indexOf(data));
