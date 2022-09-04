@@ -1265,67 +1265,112 @@
 ///// Any Base Multiplication /////
 //////////////////////
 
-const b = parseInt(prompt("Write Base Number"));
-const n1 = parseInt(prompt("Write First Number"));
-const n2 = parseInt(prompt("Write Second Number"));
+// const b = parseInt(prompt("Write Base Number"));
+// const n1 = parseInt(prompt("Write First Number"));
+// const n2 = parseInt(prompt("Write Second Number"));
 
-const getProduct = (b, n1, n2) => {
-  // Write your code here
-  let rv = 0;
+// const getProduct = (b, n1, n2) => {
+//   // Write your code here
+//   let rv = 0;
 
-  let p = 1;
-  while (n2 > 0) {
-    let d2 = n2 % 10;
-    n2 = parseInt(n2 / 10);
+//   let p = 1;
+//   while (n2 > 0) {
+//     let d2 = n2 % 10;
+//     n2 = parseInt(n2 / 10);
 
-    const sprd = getProductWithASingleDigit(b, n1, d2);
-    rv = getSum(b, rv, sprd * p);
-    p = p * 10;
-  }
-  return rv;
-};
+//     const sprd = getProductWithASingleDigit(b, n1, d2);
+//     rv = getSum(b, rv, sprd * p);
+//     p = p * 10;
+//   }
+//   return rv;
+// };
 
-const getProductWithASingleDigit = (b, n1, d2) => {
-  let rv = 0;
+// const getProductWithASingleDigit = (b, n1, d2) => {
+//   let rv = 0;
 
-  let c = 0;
-  let p = 1;
-  while (n1 > 0 || c > 0) {
-    let d1 = n1 % 10;
-    n1 = parseInt(n1 / 10);
+//   let c = 0;
+//   let p = 1;
+//   while (n1 > 0 || c > 0) {
+//     let d1 = n1 % 10;
+//     n1 = parseInt(n1 / 10);
 
-    let d = d1 * d2 + c;
+//     let d = d1 * d2 + c;
 
-    c = parseInt(d / b);
-    d = d % b;
+//     c = parseInt(d / b);
+//     d = d % b;
 
-    rv = rv + d * p;
-    p = p * 10;
-  }
-  return rv;
-};
+//     rv = rv + d * p;
+//     p = p * 10;
+//   }
+//   return rv;
+// };
 
-const getSum = (b, n1, n2) => {
-  // Write your code here
-  let rv = 0;
+// const getSum = (b, n1, n2) => {
+//   // Write your code here
+//   let rv = 0;
 
-  let c = 0;
-  let p = 1;
-  while (n1 > 0 || n2 > 0 || c > 0) {
-    let d1 = n1 % 10;
-    let d2 = n2 % 10;
-    n1 = parseInt(n1 / 10);
-    n2 = parseInt(n2 / 10);
+//   let c = 0;
+//   let p = 1;
+//   while (n1 > 0 || n2 > 0 || c > 0) {
+//     let d1 = n1 % 10;
+//     let d2 = n2 % 10;
+//     n1 = parseInt(n1 / 10);
+//     n2 = parseInt(n2 / 10);
 
-    let d = d1 + d2 + c;
-    c = parseInt(d / b);
-    d = d % b;
+//     let d = d1 + d2 + c;
+//     c = parseInt(d / b);
+//     d = d % b;
 
-    rv += d * p;
-    p = p * 10;
-  }
-  return rv;
-};
+//     rv += d * p;
+//     p = p * 10;
+//   }
+//   return rv;
+// };
 
-const d = getProduct(b, n1, n2);
-console.log(d);
+// const d = getProduct(b, n1, n2);
+// console.log(d);
+
+//////////////////////
+///// Span Of An Array /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total Numbers"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseFloat(prompt("Write a Number"));
+// }
+
+// let max = arr[0];
+// let min = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+//   if (arr[i] < min) {
+//     min = arr[i];
+//   }
+// }
+
+// const span = max - min;
+// console.log(span);
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total Numbers"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseFloat(prompt("Write a Number"));
+// }
+
+// const max = Math.max(...arr);
+// const min = Math.min(...arr);
+
+// const span = max - min;
+// console.log(span);
