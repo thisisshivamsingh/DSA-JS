@@ -1404,14 +1404,87 @@
 
 /////////////////***************///////////////
 
-const tNum = parseInt(prompt("Write total Numbers"));
+// const tNum = parseInt(prompt("Write total Numbers"));
 
-const arr = [];
+// const arr = [];
 
-for (let i = 0; i < tNum; i++) {
-  arr[i] = parseInt(prompt("Write a Number"));
-}
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number"));
+// }
 
-const data = parseInt(prompt("Write a Number that you want to Find"));
+// const data = parseInt(prompt("Write a Number that you want to Find"));
 
-console.log(arr.indexOf(data));
+// console.log(arr.indexOf(data));
+
+//////////////////////
+///// Bar Chart /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total Numbers"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number"));
+// }
+
+// let max = arr[0];
+
+// for (let i = 1; i < arr.length; i++) {
+//   if (arr[i] > max) {
+//     max = arr[i];
+//   }
+// }
+// let container = "";
+// let j = 1;
+// for (let floor = max; floor >= 1; floor--) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] >= floor) {
+//       container += " * ";
+//     } else {
+//       container += "   ";
+//     }
+//   }
+//   if (j % 2 === 0) {
+//     console.log(container);
+//   } else {
+//     console.log(container + " ");
+//   }
+//   container = "";
+//   j++;
+// }
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total Numbers"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number"));
+// }
+
+// const max = Math.max(...arr);
+
+// let container = "";
+
+// let j = 1;
+
+// for (let floor = max; floor >= 1; floor--) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] >= floor) {
+//       container += " * ";
+//     } else {
+//       container += "   ";
+//     }
+//   }
+//   if (j % 2 === 0) {
+//     console.log(container);
+//   } else {
+//     console.log(container + " ");
+//   }
+//   container = "";
+//   j++;
+// }
