@@ -1552,59 +1552,113 @@
 ///// Difference Of Two Arrays /////
 //////////////////////
 
-const tNumOne = parseInt(prompt("Write total Numbers for First Array"));
+// const tNumOne = parseInt(prompt("Write total Numbers for First Array"));
 
-const a1 = [];
+// const a1 = [];
 
-for (let i = 0; i < tNumOne; i++) {
-  a1[i] = parseInt(prompt("Write a Number for Array a1"));
-}
+// for (let i = 0; i < tNumOne; i++) {
+//   a1[i] = parseInt(prompt("Write a Number for Array a1"));
+// }
 
-const tNumTwo = parseInt(prompt("Write total Numbers for Two Array"));
+// const tNumTwo = parseInt(prompt("Write total Numbers for Two Array"));
 
-const a2 = [];
+// const a2 = [];
 
-for (let i = 0; i < tNumTwo; i++) {
-  a2[i] = parseInt(prompt("Write a Number for Array a2"));
-}
+// for (let i = 0; i < tNumTwo; i++) {
+//   a2[i] = parseInt(prompt("Write a Number for Array a2"));
+// }
 
-const diff = [...a2];
+// const diff = [...a2];
 
-let c = 0;
+// let c = 0;
 
-let i = a1.length - 1;
-let j = a2.length - 1;
-let k = diff.length - 1;
+// let i = a1.length - 1;
+// let j = a2.length - 1;
+// let k = diff.length - 1;
 
-while (k >= 0) {
-  let d = 0;
-  let a1v = i >= 0 ? a1[i] : 0;
+// while (k >= 0) {
+//   let d = 0;
+//   let a1v = i >= 0 ? a1[i] : 0;
 
-  // console.log(j);
-  if (a2[j] + c >= a1v) {
-    d = a2[j] + c - a1v;
-    c = 0;
-  } else {
-    d = a2[j] + c + 10 - a1v;
-    c = -1;
-  }
+//   // console.log(j);
+//   if (a2[j] + c >= a1v) {
+//     d = a2[j] + c - a1v;
+//     c = 0;
+//   } else {
+//     d = a2[j] + c + 10 - a1v;
+//     c = -1;
+//   }
 
-  diff[k] = d;
+//   diff[k] = d;
 
-  i--;
-  j--;
-  k--;
-}
-let idx = 0;
-while (idx < diff.length) {
-  if (diff[idx] == 0) {
-    idx++;
-  } else {
-    break;
-  }
-}
+//   i--;
+//   j--;
+//   k--;
+// }
+// let idx = 0;
+// while (idx < diff.length) {
+//   if (diff[idx] == 0) {
+//     idx++;
+//   } else {
+//     break;
+//   }
+// }
 
-while (idx < diff.length) {
-  console.log(diff[idx]);
-  idx++;
-}
+// while (idx < diff.length) {
+//   console.log(diff[idx]);
+//   idx++;
+// }
+
+//////////////////////
+///// Reverse an Array /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+
+// const reverse = (arr) => {
+//   // write your code here
+//   let i = 0;
+//   let j = arr.length - 1;
+//   while (i < j) {
+//     let temp = arr[i];
+//     arr[i] = arr[j];
+//     arr[j] = temp;
+
+//     i++;
+//     j--;
+//   }
+//   return arr;
+// };
+// let container = "";
+// for (const elem of reverse(arr)) {
+//   container += elem;
+// }
+// console.log(container);
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+
+// arr.reverse();
+
+// let container = "";
+
+// for (const elem of arr) {
+//   container += elem;
+// }
+
+// console.log(container);
