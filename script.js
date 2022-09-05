@@ -1662,3 +1662,53 @@
 // }
 
 // console.log(container);
+
+//////////////////////
+///// Rotate an Array /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const rNum = parseInt(prompt("Write a Number from you want to Rotate"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+
+// const reverse = (a, i, j) => {
+//   let li = i;
+//   let ri = j;
+
+//   while (li < ri) {
+//     let temp = a[li];
+//     a[li] = a[ri];
+//     a[ri] = temp;
+
+//     li++;
+//     ri--;
+//   }
+// };
+// const rotate = (a, k) => {
+//   k = k % a.length;
+//   if (k < a) {
+//     k = k + a.length;
+//   }
+//   // Part 1
+//   reverse(a, 0, a.length - k - 1);
+
+//   // Part 2
+//   reverse(a, a.length - k, a.length - 1);
+
+//   // all
+//   reverse(a, 0, a.length - 1);
+// };
+
+// rotate(arr, rNum);
+// console.log(arr);
+
+
+
