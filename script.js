@@ -1488,3 +1488,62 @@
 //   container = "";
 //   j++;
 // }
+
+//////////////////////
+///// Sum Of Two Arrays /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNumOne = parseInt(prompt("Write total Numbers for First Array"));
+
+// const arr1 = [];
+
+// for (let i = 0; i < tNumOne; i++) {
+//   arr1[i] = parseInt(prompt("Write a Number for Array arr1"));
+// }
+
+// const tNumTwo = parseInt(prompt("Write total Numbers for Two Array"));
+
+// const arr2 = [];
+
+// for (let i = 0; i < tNumTwo; i++) {
+//   arr2[i] = parseInt(prompt("Write a Number for Array arr2"));
+// }
+
+// const sum = [...(tNumOne > tNumTwo ? arr1 : arr2)];
+
+// let c = 0;
+
+// let i = arr1.length - 1;
+// let j = arr2.length - 1;
+// let k = sum.length - 1;
+
+// while (k >= 0) {
+//   let d = c;
+
+//   if (i >= 0) {
+//     d += arr1[i];
+//   }
+
+//   if (j >= 0) {
+//     d += arr2[j];
+//   }
+
+//   c = parseInt(d / 10);
+//   d = d % 10;
+
+//   sum[k] = d;
+
+//   i--;
+//   j--;
+//   k--;
+// }
+
+// if (c != 0) {
+//   console.log(c);
+// }
+
+// for (const elem of sum) {
+//   console.log(elem);
+// }
