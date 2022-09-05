@@ -1547,3 +1547,66 @@
 // for (const elem of sum) {
 //   console.log(elem);
 // }
+
+//////////////////////
+///// Difference Of Two Arrays /////
+//////////////////////
+
+const tNumOne = parseInt(prompt("Write total Numbers for First Array"));
+
+const a1 = [];
+
+for (let i = 0; i < tNumOne; i++) {
+  a1[i] = parseInt(prompt("Write a Number for Array a1"));
+}
+
+const tNumTwo = parseInt(prompt("Write total Numbers for Two Array"));
+
+const a2 = [];
+
+for (let i = 0; i < tNumTwo; i++) {
+  a2[i] = parseInt(prompt("Write a Number for Array a2"));
+}
+
+const diff = [...a2];
+
+let c = 0;
+
+let i = a1.length - 1;
+let j = a2.length - 1;
+let k = diff.length - 1;
+
+while (k >= 0) {
+  let d = 0;
+  let a1v = i >= 0 ? a1[i] : 0;
+
+  // console.log(j);
+  if (a2[j] + c >= a1v) {
+    d = a2[j] + c - a1v;
+    c = 0;
+  } else {
+    d = a2[j] + c + 10 - a1v;
+    c = -1;
+  }
+
+  diff[k] = d;
+
+  i--;
+  j--;
+  k--;
+}
+let idx = 0;
+while (idx < diff.length) {
+  if (diff[idx] == 0) {
+    idx++;
+  } else {
+    break;
+  }
+}
+let container = "";
+while (idx < diff.length) {
+  container = container + diff[idx];
+  idx++;
+}
+console.log(container);
+container = "";
