@@ -1603,10 +1603,8 @@ while (idx < diff.length) {
     break;
   }
 }
-let container = "";
+
 while (idx < diff.length) {
-  container = container + diff[idx];
+  console.log(diff[idx]);
   idx++;
 }
-console.log(container);
-container = "";
