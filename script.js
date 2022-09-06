@@ -1710,5 +1710,28 @@
 // rotate(arr, rNum);
 // console.log(arr);
 
+//////////////////////
+///// Inverse of an Array /////
+//////////////////////
 
+const tNum = parseInt(prompt("Write total numbers for Array"));
 
+const arr = [];
+
+for (let i = 0; i < tNum; i++) {
+  arr[i] = parseInt(prompt("Write a Number for Array"));
+}
+
+const inverse = (arr) => {
+  const newArray = [...arr];
+  for (let i = 0; i < arr.length; i++) {
+    let v = arr[i];
+    newArray[v] = i;
+  }
+  return newArray;
+};
+const newArr = inverse(arr);
+
+for (const elem of newArr) {
+  console.log(elem);
+}
