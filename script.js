@@ -1714,6 +1714,54 @@
 ///// Inverse of an Array /////
 //////////////////////
 
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+
+// const inverse = (arr) => {
+//   const newArray = [...arr];
+//   for (let i = 0; i < arr.length; i++) {
+//     let v = arr[i];
+//     newArray[v] = i;
+//   }
+//   return newArray;
+// };
+// const newArr = inverse(arr);
+
+// for (const elem of newArr) {
+//   console.log(elem);
+// }
+
+//////////////////////
+///// Sub Arrays of an Array /////
+//////////////////////
+
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+// let container = "";
+// for (let i = 0; i < arr.length; i++) {
+//   for (let j = i; j < arr.length; j++) {
+//     for (let k = i; k <= j; k++) {
+//       container = container + arr[k] + "\t";
+//     }
+//     console.log(container);
+//     container = "";
+//   }
+// }
+
+//////////////////////
+///// Subsets of an Array /////
+//////////////////////
+
 const tNum = parseInt(prompt("Write total numbers for Array"));
 
 const arr = [];
@@ -1722,16 +1770,21 @@ for (let i = 0; i < tNum; i++) {
   arr[i] = parseInt(prompt("Write a Number for Array"));
 }
 
-const inverse = (arr) => {
-  const newArray = [...arr];
-  for (let i = 0; i < arr.length; i++) {
-    let v = arr[i];
-    newArray[v] = i;
-  }
-  return newArray;
-};
-const newArr = inverse(arr);
+let limit = Math.pow(2, arr.length);
 
-for (const elem of newArr) {
-  console.log(elem);
+for (let i = 0; i < limit; i++) {
+  let set = " ";
+  let temp = i;
+
+  for (let j = arr.length - 1; j >= 0; j--) {
+    let r = temp % 2;
+    temp = parseInt(temp / 2);
+
+    if (r == 0) {
+      set = "-\t" + set;
+    } else {
+      set = arr[j] + "\t" + set;
+    }
+  }
+  console.log(set);
 }
