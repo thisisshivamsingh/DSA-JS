@@ -1762,29 +1762,66 @@
 ///// Subsets of an Array /////
 //////////////////////
 
-const tNum = parseInt(prompt("Write total numbers for Array"));
+// const tNum = parseInt(prompt("Write total numbers for Array"));
 
-const arr = [];
+// const arr = [];
 
-for (let i = 0; i < tNum; i++) {
-  arr[i] = parseInt(prompt("Write a Number for Array"));
-}
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
 
-let limit = Math.pow(2, arr.length);
+// let limit = Math.pow(2, arr.length);
 
-for (let i = 0; i < limit; i++) {
-  let set = " ";
-  let temp = i;
+// for (let i = 0; i < limit; i++) {
+//   let set = " ";
+//   let temp = i;
 
-  for (let j = arr.length - 1; j >= 0; j--) {
-    let r = temp % 2;
-    temp = parseInt(temp / 2);
+//   for (let j = arr.length - 1; j >= 0; j--) {
+//     let r = temp % 2;
+//     temp = parseInt(temp / 2);
 
-    if (r == 0) {
-      set = "-\t" + set;
-    } else {
-      set = arr[j] + "\t" + set;
-    }
-  }
-  console.log(set);
-}
+//     if (r == 0) {
+//       set = "-\t" + set;
+//     } else {
+//       set = arr[j] + "\t" + set;
+//     }
+//   }
+//   console.log(set);
+// }
+
+//////////////////////
+///// Binary Search Algorithm /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const binarySearchAlgorithm = () => {
+//   const arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+//   const data = 71;
+
+//   let l = 0;
+//   let h = arr.length - 1;
+
+//   while (l <= h) {
+//     let m = parseInt((l + h) / 2);
+//     if (data > arr[m]) {
+//       l = m + 1;
+//     } else if (data < arr[m]) {
+//       h = m - 1;
+//     } else {
+//       console.log(m);
+//       return;
+//     }
+//   }
+//   console.log(-1);
+// };
+// binarySearchAlgorithm();
+
+/////////////////***************///////////////
+
+const arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+
+const data = 70;
+
+console.log(arr.indexOf(data));
