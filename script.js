@@ -1820,8 +1820,48 @@
 
 /////////////////***************///////////////
 
-const arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
+// const arr = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100];
 
-const data = 70;
+// const data = 70;
 
-console.log(arr.indexOf(data));
+// console.log(arr.indexOf(data));
+
+//////////////////////
+///// Ceil and Floor /////
+//////////////////////
+
+const tNum = parseInt(prompt("Write total numbers for Array"));
+
+const arr = [];
+
+for (let i = 0; i < tNum; i++) {
+  arr[i] = parseInt(prompt("Write a Number for Array"));
+}
+
+const data = parseInt(
+  prompt("Write a Number which for you  want to find ceil and floor")
+);
+
+let lo = 0;
+let hi = arr.length - 1;
+
+let ceil = 0;
+let floor = 0;
+
+while (lo <= hi) {
+  let mid = parseInt((lo + hi) / 2);
+  if (data < arr[mid]) {
+    hi = mid - 1;
+    ceil = arr[mid];
+  } else if (data > arr[mid]) {
+    lo = mid + 1;
+    floor = arr[mid];
+  } else {
+    ceil = arr[mid];
+    floor = arr[mid];
+    break;
+  }
+}
+
+console.log(ceil);
+console.log(floor);
