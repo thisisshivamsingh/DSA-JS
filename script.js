@@ -1830,38 +1830,111 @@
 ///// Ceil and Floor /////
 //////////////////////
 
-const tNum = parseInt(prompt("Write total numbers for Array"));
+// const tNum = parseInt(prompt("Write total numbers for Array"));
 
-const arr = [];
+// const arr = [];
 
-for (let i = 0; i < tNum; i++) {
-  arr[i] = parseInt(prompt("Write a Number for Array"));
-}
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
 
-const data = parseInt(
-  prompt("Write a Number which for you  want to find ceil and floor")
-);
+// const data = parseInt(
+//   prompt("Write a Number which for you  want to find ceil and floor")
+// );
 
-let lo = 0;
-let hi = arr.length - 1;
+// let lo = 0;
+// let hi = arr.length - 1;
 
-let ceil = 0;
-let floor = 0;
+// let ceil = 0;
+// let floor = 0;
 
-while (lo <= hi) {
-  let mid = parseInt((lo + hi) / 2);
-  if (data < arr[mid]) {
-    hi = mid - 1;
-    ceil = arr[mid];
-  } else if (data > arr[mid]) {
-    lo = mid + 1;
-    floor = arr[mid];
-  } else {
-    ceil = arr[mid];
-    floor = arr[mid];
-    break;
-  }
-}
+// while (lo <= hi) {
+//   let mid = parseInt((lo + hi) / 2);
+//   if (data < arr[mid]) {
+//     hi = mid - 1;
+//     ceil = arr[mid];
+//   } else if (data > arr[mid]) {
+//     lo = mid + 1;
+//     floor = arr[mid];
+//   } else {
+//     ceil = arr[mid];
+//     floor = arr[mid];
+//     break;
+//   }
+// }
 
-console.log(ceil);
-console.log(floor);
+// console.log(ceil);
+// console.log(floor);
+
+//////////////////////
+///// First and Last Index /////
+//////////////////////
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+
+// const data = parseInt(
+//   prompt(
+//     "Write a Number which for you  want to find first index and last index"
+//   )
+// );
+
+// let lo = 0;
+// let hi = arr.length - 1;
+// let fi = -1;
+
+// while (lo <= hi) {
+//   let mid = parseInt((lo + hi) / 2);
+//   if (data > arr[mid]) {
+//     lo = mid + 1;
+//   } else if (data < arr[mid]) {
+//     hi = mid - 1;
+//   } else {
+//     fi = mid;
+//     hi = mid - 1;
+//   }
+// }
+// console.log(fi);
+
+// lo = 0;
+// hi = arr.length - 1;
+// let li = -1;
+
+// while (lo <= hi) {
+//   let mid = parseInt((lo + hi) / 2);
+//   if (data > arr[mid]) {
+//     lo = mid + 1;
+//   } else if (data < arr[mid]) {
+//     hi = mid - 1;
+//   } else {
+//     li = mid;
+//     lo = mid + 1;
+//   }
+// }
+// console.log(li);
+
+/////////////////***************///////////////
+
+// const tNum = parseInt(prompt("Write total numbers for Array"));
+
+// const arr = [];
+
+// for (let i = 0; i < tNum; i++) {
+//   arr[i] = parseInt(prompt("Write a Number for Array"));
+// }
+
+// const data = parseInt(
+//   prompt(
+//     "Write a Number which for you  want to find first index and last index"
+//   )
+// );
+
+// console.log("firstIndex", arr.indexOf(data));
+// console.log("lastIndex", arr.lastIndexOf(data));
