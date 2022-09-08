@@ -1938,3 +1938,27 @@
 
 // console.log("firstIndex", arr.indexOf(data));
 // console.log("lastIndex", arr.lastIndexOf(data));
+
+//////////////////////
+///// Introduction to 2-D Arrays /////
+//////////////////////
+
+const tRowNum = parseInt(prompt("Write row number for a 2-D Array"));
+const tColNum = parseInt(prompt("Write col number for a 2-D Array"));
+
+const arr = [];
+
+for (let i = 0; i < tRowNum; i++) {
+  arr[i] = [];
+  for (let j = 0; j < tColNum; j++) {
+    arr[i][j] = parseInt(prompt("Write a Number for Array"));
+  }
+}
+let container = "";
+for (let i = 0; i < arr.length; i++) {
+  for (let j = 0; j < arr[i].length; j++) {
+    container = container + arr[i][j] + " ";
+  }
+  console.log(container);
+  container = "";
+}
