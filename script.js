@@ -1985,16 +1985,37 @@
 ///// Patterns-2 /////
 //////////////////////
 
-function patternTwo() {
+// function patternTwo() {
+//   const n = parseInt(prompt("Write a Number"));
+//   let container = "";
+//   for (let i = n; i >= 1; i--) {
+//     for (let j = 1; j <= i; j++) {
+//       container += "*";
+//     }
+//     console.log(container);
+//     container = "";
+//   }
+// }
+
+// patternTwo();
+
+//////////////////////
+///// Patterns-3 /////
+//////////////////////
+
+const patternThree = function () {
   const n = parseInt(prompt("Write a Number"));
   let container = "";
-  for (let i = n; i >= 1; i--) {
-    for (let j = 1; j <= i; j++) {
+  for (let i = 1; i <= n; i++) {
+    for (let j = 1; j <= n - i; j++) {
+      container += " ";
+    }
+    for (let k = 1; k <= i; k++) {
       container += "*";
     }
     console.log(container);
     container = "";
   }
-}
+};
 
-patternTwo();
+patternThree();
