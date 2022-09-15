@@ -1968,7 +1968,7 @@
 //////////////////////
 
 function patternOne() {
-  const n = prompt(parseInt("Write a Number"));
+  const n = parseInt(prompt("Write a Number"));
   let container = "";
   for (let i = 1; i <= n; i++) {
     for (let j = 1; j <= i; j++) {
@@ -1978,3 +1978,5 @@ function patternOne() {
     container = "";
   }
 }
+
+patternOne();
