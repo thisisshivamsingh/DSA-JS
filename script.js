@@ -2003,19 +2003,72 @@
 ///// Patterns-3 /////
 //////////////////////
 
-const patternThree = function () {
+// const patternThree = function () {
+//   const n = parseInt(prompt("Write a Number"));
+//   let container = "";
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= n - i; j++) {
+//       container += " ";
+//     }
+//     for (let k = 1; k <= i; k++) {
+//       container += "*";
+//     }
+//     console.log(container);
+//     container = "";
+//   }
+// };
+
+// patternThree();
+
+//////////////////////
+///// Patterns-4 /////
+//////////////////////
+
+// const patternFour = () => {
+//   const n = parseInt(prompt("Write a Number"));
+//   let l = n;
+//   let container = "";
+//   for (let i = 0; i < n; i++) {
+//     for (let j = 1; j <= n - l; j++) {
+//       container += " ";
+//     }
+//     for (let k = 1; k <= n - i; k++) {
+//       container += "*";
+//     }
+//     console.log(container);
+//     container = "";
+//     l--;
+//   }
+// };
+
+// patternFour();
+
+//////////////////////
+///// Patterns-5 /////
+//////////////////////
+
+const patternFive = () => {
   const n = parseInt(prompt("Write a Number"));
   let container = "";
+  let sp = parseInt(n / 2);
+  let st = 1;
   for (let i = 1; i <= n; i++) {
-    for (let j = 1; j <= n - i; j++) {
-      container += " ";
+    for (let j = 1; j <= sp; j++) {
+      container += "\t";
     }
-    for (let k = 1; k <= i; k++) {
-      container += "*";
+    for (let k = 1; k <= st; k++) {
+      container += "*\t";
+    }
+    if (i <= parseInt(n / 2)) {
+      sp--;
+      st += 2;
+    } else {
+      sp++;
+      st -= 2;
     }
     console.log(container);
     container = "";
   }
 };
 
-patternThree();
+patternFive();
