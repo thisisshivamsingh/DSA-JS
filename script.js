@@ -1967,10 +1967,28 @@
 ///// Patterns-1 /////
 //////////////////////
 
-function patternOne() {
+// function patternOne() {
+//   const n = parseInt(prompt("Write a Number"));
+//   let container = "";
+//   for (let i = 1; i <= n; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       container += "*";
+//     }
+//     console.log(container);
+//     container = "";
+//   }
+// }
+
+// patternOne();
+
+//////////////////////
+///// Patterns-2 /////
+//////////////////////
+
+function patternTwo() {
   const n = parseInt(prompt("Write a Number"));
   let container = "";
-  for (let i = 1; i <= n; i++) {
+  for (let i = n; i >= 1; i--) {
     for (let j = 1; j <= i; j++) {
       container += "*";
     }
@@ -1979,4 +1997,4 @@ function patternOne() {
   }
 }
 
-patternOne();
+patternTwo();
