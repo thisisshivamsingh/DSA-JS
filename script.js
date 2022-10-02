@@ -2077,41 +2077,41 @@
 ///// Difference of two arrays /////
 //////////////////////
 
-const differenceOfTwoArrays = () => {
-  const n1 = parseInt(prompt("Write a Total Length of First Array"));
-  const n2 = parseInt(prompt("Write a Total Length of Second Array"));
+// const differenceOfTwoArrays = () => {
+//   const n1 = parseInt(prompt("Write a Total Length of First Array"));
+//   const n2 = parseInt(prompt("Write a Total Length of Second Array"));
 
-  let arr1 = [];
+//   let arr1 = [];
 
-  for (let i = 0; i < n1; i++) {
-    arr1[i] = parseInt(prompt("Write a Number Element for arr1"));
-  }
+//   for (let i = 0; i < n1; i++) {
+//     arr1[i] = parseInt(prompt("Write a Number Element for arr1"));
+//   }
 
-  let arr2 = [];
+//   let arr2 = [];
 
-  for (let i = 0; i < n2; i++) {
-    arr2[i] = parseInt(prompt("Write a Number Element for arr2"));
-  }
+//   for (let i = 0; i < n2; i++) {
+//     arr2[i] = parseInt(prompt("Write a Number Element for arr2"));
+//   }
 
-  let diff = [];
+//   let diff = [];
 
-  for (let i = 0; i < arr2.length; i++) {
-    diff[i] = arr2[i];
-  }
+//   for (let i = 0; i < arr2.length; i++) {
+//     diff[i] = arr2[i];
+//   }
 
-  let c = 0;
-  let i = arr1.length - 1;
-  let j = arr2.length - 1;
-  let k = diff.length - 1;
+//   let c = 0;
+//   let i = arr1.length - 1;
+//   let j = arr2.length - 1;
+//   let k = diff.length - 1;
 
-  while (k >= 0) {
-    let d = 0;
-    let a1v = i >= 0 ? arr1[i] : 0;
+//   while (k >= 0) {
+//     let d = 0;
+//     let a1v = i >= 0 ? arr1[i] : 0;
 
-    // console.log(j);
+//     // console.log(j);
     
-    if (arr2[j] + c >= a1v) {
-      d = arr2[j] + c - a1v;
-    }
-  }
-};
+//     if (arr2[j] + c >= a1v) {
+//       d = arr2[j] + c - a1v;
+//     }
+//   }
+// };
