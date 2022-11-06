@@ -1667,7 +1667,7 @@
 ///// Rotate an Array /////
 //////////////////////
 
-/////////////////***************///////////////
+/////////////////***************//////////////
 
 // const tNum = parseInt(prompt("Write total numbers for Array"));
 
@@ -2109,7 +2109,7 @@
 //     let a1v = i >= 0 ? arr1[i] : 0;
 
 //     // console.log(j);
-    
+
 //     if (arr2[j] + c >= a1v) {
 //       d = arr2[j] + c - a1v;
 //     }
