@@ -2073,9 +2073,9 @@
 
 // patternFive();
 
-///////////////////////
+/////////////////////////
 ///// Difference of two arrays /////
-///////////////////////
+/////////////////////////
 
 // const differenceOfTwoArrays = () => {
 //   const n1 = parseInt(prompt("Write a Total Length of First Array"));
