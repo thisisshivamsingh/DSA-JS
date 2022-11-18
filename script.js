@@ -2074,7 +2074,7 @@
 // patternFive();
 
 ///////////////////////
-///// Difference of two arrays ///////
+///// Difference of two arrays /////////
 ///////////////////////
 
 // const differenceOfTwoArrays = () => {
